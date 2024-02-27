@@ -32,3 +32,12 @@ Sample Input
 Explanation
 Only Ashley, Julia, and Belvet have Marks > 75 . If you look at the last three characters of each of their names, there are no duplicates and 'ley' < 'lia' < 'vet'.
 
+SELECT NAME
+FROM STUDENTS
+WHERE MARKS > 75
+ORDER BY RIGHT (NAME, 3), ID ASC;
+
+NOTES ~
+- `RIGHT(NAME, 3)`: This function extracts the rightmost three characters of the `NAME` column. The `RIGHT()` function in MySQL takes two parameters: the string expression (in this case, the `NAME` column) and the number of characters to extract (in this case, 3). It essentially extracts the last three characters of each student's name.
+- `ID ASC`: This sorts the results by the `ID` column in ascending order. If there are multiple students with the same last three characters in their names (e.g., 'ley', 'lia', 'vet'), this clause ensures that their ordering is further refined based on their `ID` values.
+So, the entire `ORDER BY` line ensures that the query results are ordered first by the last three characters of the names, and then, if there are ties, by the `ID` values in ascending order.
