@@ -1,10 +1,10 @@
 # HackerRank
 
 - SQL
-  - [Easy](https://github.com/karlyndiary/HackerRank-Code/tree/main/SQL/Easy)
-  - Medium
-  - Difficult
+  - [Basic](https://github.com/karlyndiary/HackerRank-Code/tree/main/SQL/Basic)
+  - [Intermediate](https://github.com/karlyndiary/HackerRank/tree/main/SQL/Intermediate)
+  - [Advanced](https://github.com/karlyndiary/HackerRank/tree/main/SQL/Advanced)
 - Python
-  - Easy
-  - Medium
-  - Difficult
+  - [Basic]
+  - [Intermediate]
+  - [Advanced]
