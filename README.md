@@ -8,5 +8,5 @@
   - [Advanced](https://github.com/karlyndiary/HackerRank/tree/main/SQL/Advanced)
 - Python
   - [Basic](https://github.com/karlyndiary/HackerRank/tree/main/Python/Basic)
-  - [Intermediate]
-  - [Advanced]
+  - [Intermediate](https://github.com/karlyndiary/HackerRank/tree/main/Python/Intermediate)
+  - [Advanced](https://github.com/karlyndiary/HackerRank/tree/main/Python/Advanced)
