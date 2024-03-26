@@ -64,3 +64,11 @@ There are a total of 3 professors.
 
 Explanation The results of the first query are formatted to the problem description's specifications. The results of the second query are ascendingly ordered first by number of names corresponding to each profession (2 <2 <3 <3), and then alphabetically by profession (doctor ≤ singer, and actor professor).
 
+SELECT CONCAT(NAME,'(',LEFT(OCCUPATION,1),')')
+FROM OCCUPATIONS
+ORDER BY NAME;
+
+SELECT CONCAT('There are a total of ', COUNT(OCCUPATION),' ', LOWER(OCCUPATION), 's.')
+FROM OCCUPATIONS
+GROUP BY OCCUPATION
+ORDER BY COUNT(OCCUPATION), OCCUPATION;
