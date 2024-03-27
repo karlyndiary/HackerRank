@@ -48,4 +48,7 @@ The table below shows the salaries without zeros as they were entered by Samanth
 
 Samantha computes an average salary of 98.00. The actual average salary is 2159.00. The resulting error between the two calculations is 2159.00 98.00 = 2061.00. Since it is equal to the integer 2061, it does not get rounded up.
 
-
+SELECT CEIL(ACTUAL - MISCALCULATED) 
+FROM
+    (SELECT AVG(SALARY) AS ACTUAL, AVG(REPLACE(SALARY, 0, '')) AS MISCALCULATED
+     FROM EMPLOYEES) AS Q
