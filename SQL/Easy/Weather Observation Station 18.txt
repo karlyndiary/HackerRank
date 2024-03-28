@@ -19,3 +19,10 @@ Input Format The STATION table is described as follows : where LAT_N is the nort
 | LONG_W      | NUMBER        |
 +-------------+---------------+
 
+SELECT ROUND((ABS(A - C) + ABS(B - D)),4)
+FROM
+(SELECT MIN(LAT_N) AS A,
+       MIN(LONG_W) AS B,
+       MAX(LAT_N) AS C,
+       MAX(LONG_W) AS D
+FROM STATION) AS Q
