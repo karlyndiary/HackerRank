@@ -8,3 +8,12 @@ P(R) represents a pattern drawn by Julia in R rows. The following pattern repres
 
 Write a query to print the pattern P(20).
 
+with recursive pattern as (
+select 20 as rownum, repeat('* ', 20) as star
+union all
+select rownum - 1, repeat('* ', rownum - 1) 
+from pattern
+where rownum > 1
+) 
+
+select star from pattern
