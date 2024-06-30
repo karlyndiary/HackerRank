@@ -5,5 +5,15 @@ P(R) represents a pattern drawn by Julia in R rows. The following pattern repres
 * * * 
 * * * * 
 * * * * *
+
 Write a query to print the pattern P(20).
 
+with recursive star(value) as (
+    select 1 as value
+    union
+    select value + 1
+    from star
+    where value < 20)
+    
+select repeat('* ', value)
+from star
